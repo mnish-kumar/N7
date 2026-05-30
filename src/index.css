@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Archivo', sans-serif;
+}
+
+.font-archivo {
+  font-family: 'Archivo', sans-serif;
+}
+
+.font-chivo {
+  font-family: 'Chivo Mono', monospace;
+}

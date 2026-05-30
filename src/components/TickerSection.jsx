@@ -15,7 +15,7 @@ const TickerItem = ({ item }) => (
     {item.type === "brand" ? (
       <span
         className="
-          bg-[var(--gradient-primary)]
+          bg-[image:var(--gradient-primary)]
           bg-clip-text text-transparent
           text-xl sm:text-2xl md:text-3xl
           font-archivo shrink-0

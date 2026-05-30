@@ -60,7 +60,7 @@ const Footer = () => {
                 text-[120px] sm:text-[160px] lg:text-[220px]
                 font-bold
                 leading-none
-                bg-[var(--gradient-brand-vertical)]
+                bg-[image:var(--gradient-brand-vertical)]
                 bg-clip-text
                 text-transparent
               "

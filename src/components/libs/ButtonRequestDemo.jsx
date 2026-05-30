@@ -5,7 +5,7 @@ const ButtonRequestDemo = () => {
     <>
       <button
         className="px-6 py-3 rounded-[8px] text-xs font-chivo text-white
-                bg-[var(--gradient-primary)]
+          bg-[image:var(--gradient-primary)]
                 hover:opacity-90 transition-opacity"
       >
         REQUEST DEMO

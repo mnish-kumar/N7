@@ -26,7 +26,7 @@ const PaperlessSection = () => {
          
           px-6 sm:px-10 md:px-12
           py-10 md:py-16
-          bg-[var(--gradient-paper)]
+          bg-[image:var(--gradient-paper)]
           border border-[var(--blue-primary-10)]
           flex flex-col md:flex-row
           items-center

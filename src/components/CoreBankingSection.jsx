@@ -71,7 +71,7 @@ const CoreBankingSection = () => {
                 py-3 px-8
                 text-xs
                 font-chivo
-                bg-[var(--gradient-primary)]
+                bg-[image:var(--gradient-primary)]
                 transition-all duration-300
                 hover:scale-[1.03]
                 hover:shadow-[0px_0px_25px_var(--blue-primary-45)]
@@ -109,7 +109,7 @@ const CoreBankingSection = () => {
           <div
             className="
               absolute inset-0
-              bg-[var(--gradient-primary-soft)]
+              bg-[image:var(--gradient-primary-soft)]
               blur-[80px] md:blur-[120px]
               opacity-30
               scale-90

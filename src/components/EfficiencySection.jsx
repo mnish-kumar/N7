@@ -28,7 +28,7 @@ const EfficiencySection = () => {
           <div
             className="
               absolute inset-0
-              bg-[var(--gradient-primary-soft)]
+              bg-[image:var(--gradient-primary-soft)]
               blur-[80px] md:blur-[120px]
               opacity-20
               scale-90

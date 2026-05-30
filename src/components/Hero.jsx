@@ -33,7 +33,7 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 mt-10 items-center md:items-start">
-          <button className="w-full sm:w-auto rounded-[10px] py-2 px-6 text-xs bg-[var(--gradient-primary)] hover:opacity-90 transition-opacity">
+          <button className="w-full sm:w-auto rounded-[10px] py-2 px-6 text-xs bg-[image:var(--gradient-primary)] hover:opacity-90 transition-opacity">
             REQUEST DEMO
           </button>
           <button className="w-full sm:w-auto rounded-[10px] py-2 px-6 border border-[var(--text-primary)] text-xs hover:bg-[var(--white-10)] transition-colors">
@@ -81,7 +81,7 @@ const Hero = () => {
             blur-[100px]
             md:blur-[120px]
             opacity-50
-            bg-[var(--gradient-primary-soft)]
+            bg-[image:var(--gradient-primary-soft)]
           "
         />
 

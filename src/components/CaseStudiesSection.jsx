@@ -78,9 +78,9 @@ const CaseStudiesSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 flex-1">
           {/* Logo/Icon Section */}
           <div className="w-full md:w-[40%] flex-shrink-0">
-            <div className="bg-[var(--gradient-case)] rounded-2xl p-8 md:p-10 aspect-square md:aspect-auto md:h-[340px] flex items-center justify-center relative overflow-hidden">
+            <div className="bg-[image:var(--gradient-case)] rounded-2xl p-8 md:p-10 aspect-square md:aspect-auto md:h-[340px] flex items-center justify-center relative overflow-hidden">
               {/* Gradient Glow */}
-              <div className="absolute inset-0 bg-[var(--gradient-primary-soft)] blur-[60px] opacity-20" />
+              <div className="absolute inset-0 bg-[image:var(--gradient-primary-soft)] blur-[60px] opacity-20" />
 
               {/* Icon Grid */}
               <div className="relative z-10 grid grid-cols-2 gap-8 md:gap-10">

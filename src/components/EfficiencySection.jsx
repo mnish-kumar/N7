@@ -16,7 +16,7 @@ const features = [
 
 const EfficiencySection = () => {
   return (
-    <section className="mt-20 md:mt-32 relative overflow-hidden text-[#E9F4F9]">
+    <section className="mt-20 md:mt-32 relative overflow-hidden text-[var(--text-primary)]">
 
       {/* Main Layout */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20">
@@ -28,7 +28,7 @@ const EfficiencySection = () => {
           <div
             className="
               absolute inset-0
-              bg-[linear-gradient(103.43deg,_#00B4FD_-1.02%,_#003ACE_83.53%)]
+              bg-[var(--gradient-primary-soft)]
               blur-[80px] md:blur-[120px]
               opacity-20
               scale-90
@@ -41,7 +41,7 @@ const EfficiencySection = () => {
               relative z-10
               w-full
               rounded-[16px] md:rounded-[20px]
-              border border-[#00B4FD]/30
+              border border-[var(--blue-primary-30)]
               shadow-2xl
             "
             src={BankingDashboard}
@@ -70,13 +70,13 @@ const EfficiencySection = () => {
             {features.map((feature) => (
               <div
                 key={feature}
-                className="flex items-start gap-3 text-[#E9F4F9]/80"
+                className="flex items-start gap-3 text-[var(--text-primary-80)]"
               >
                 {/* Icon */}
                 <div
                   className="
                     min-w-5 min-h-5
-                    rounded-full bg-[#0057FF]
+                    rounded-full bg-[var(--blue-accent)]
                     flex items-center justify-center
                     mt-1 shrink-0
                   "

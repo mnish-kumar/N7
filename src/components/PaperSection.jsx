@@ -2,7 +2,7 @@ import ButtonRequestDemo from "./libs/ButtonRequestDemo";
 
 const PaperlessSection = () => {
   return (
-    <section className="relative bg-[#000D12]  text-[#E9F4F9] overflow-hidden">
+    <section className="relative bg-[var(--bg-primary)]  text-[var(--text-primary)] overflow-hidden">
 
       <h1
         className="
@@ -26,8 +26,8 @@ const PaperlessSection = () => {
          
           px-6 sm:px-10 md:px-12
           py-10 md:py-16
-          bg-[linear-gradient(90deg,_rgba(0,180,253,0.08)_0%,_rgba(0,58,206,0.02)_100%)]
-          border border-[#00B4FD]/10
+          bg-[var(--gradient-paper)]
+          border border-[var(--blue-primary-10)]
           flex flex-col md:flex-row
           items-center
           justify-between
@@ -42,7 +42,7 @@ const PaperlessSection = () => {
             going paper-less now.
           </h1>
 
-          <p className="mt-4 md:mt-6 text-sm text-[#E9F4F9]/60 leading-6">
+          <p className="mt-4 md:mt-6 text-sm text-[var(--text-primary-60)] leading-6">
             CB7 helps your financial institution improve
             the client experience, automate and optimize
             procedures, simplify banking operations.
@@ -50,18 +50,18 @@ const PaperlessSection = () => {
         </div>
 
         
-        <div className="w-full h-px md:w-px md:h-[160px] bg-[#E9F4F9]/10" />
+        <div className="w-full h-px md:w-px md:h-[160px] bg-[var(--text-primary-10)]" />
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 w-full sm:w-auto">
           <button
             className="
-              border border-[#E9F4F9]
+              border border-[var(--text-primary)]
               rounded-[10px]
               px-8 md:px-10
               py-3
               text-xs font-chivo
-              hover:bg-white/10
+              hover:bg-[var(--white-10)]
               transition-colors duration-300
               w-full sm:w-auto
             "

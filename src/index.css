@@ -1,5 +1,71 @@
 @import "tailwindcss";
 
+:root {
+  --bg-primary: #000d12;
+  --bg-card: #02141b;
+  --bg-panel: #071b32;
+  --bg-light: #e8eef2;
+  --bg-glass: #2f2f2fb2;
+
+  --text-primary: #e9f4f9;
+  --text-dark: #000d12;
+  --text-primary-80: rgba(233, 244, 249, 0.8);
+  --text-primary-70: rgba(233, 244, 249, 0.7);
+  --text-primary-60: rgba(233, 244, 249, 0.6);
+  --text-primary-50: rgba(233, 244, 249, 0.5);
+  --text-primary-40: rgba(233, 244, 249, 0.4);
+  --text-primary-30: rgba(233, 244, 249, 0.3);
+  --text-primary-10: rgba(233, 244, 249, 0.1);
+
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-10: rgba(255, 255, 255, 0.1);
+
+  --black-10: rgba(0, 0, 0, 0.1);
+  --black-60: rgba(0, 0, 0, 0.6);
+  --black-70: rgba(0, 0, 0, 0.7);
+  --black-75: rgba(0, 0, 0, 0.75);
+
+  --blue-primary: #00b4fd;
+  --blue-secondary: #003ace;
+  --blue-accent: #0057ff;
+  --blue-primary-80: rgba(0, 180, 253, 0.8);
+  --blue-primary-70: rgba(0, 180, 253, 0.7);
+  --blue-primary-60: rgba(0, 180, 253, 0.6);
+  --blue-primary-45: rgba(0, 180, 253, 0.45);
+  --blue-primary-30: rgba(0, 180, 253, 0.3);
+  --blue-primary-10: rgba(0, 180, 253, 0.1);
+  --blue-primary-08: rgba(0, 180, 253, 0.08);
+  --blue-secondary-02: rgba(0, 58, 206, 0.02);
+
+  --gradient-primary: linear-gradient(
+    106.53deg,
+    #00b4fd -5.68%,
+    #003ace 86.98%
+  );
+  --gradient-primary-soft: linear-gradient(
+    103.43deg,
+    #00b4fd -1.02%,
+    #003ace 83.53%
+  );
+  --gradient-brand-vertical: linear-gradient(
+    180deg,
+    #01b4fd 0%,
+    #013acf 100%
+  );
+  --gradient-case: linear-gradient(
+    135deg,
+    #0a2342 0%,
+    #0f3c5d 100%
+  );
+  --gradient-paper: linear-gradient(
+    90deg,
+    rgba(0, 180, 253, 0.08) 0%,
+    rgba(0, 58, 206, 0.02) 100%
+  );
+}
+
 body {
   font-family: 'Archivo', sans-serif;
 }

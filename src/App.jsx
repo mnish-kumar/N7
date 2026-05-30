@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-      <div className="bg-[#000D12] px-4 sm:px-8 md:px-15 flex flex-col overflow-x-hidden">
+      <div className="bg-[var(--bg-primary)] px-4 sm:px-8 md:px-15 flex flex-col overflow-x-hidden">
         <div className="flex justify-center">
           <Navbar />
         </div>

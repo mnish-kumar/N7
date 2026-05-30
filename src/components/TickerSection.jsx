@@ -15,7 +15,7 @@ const TickerItem = ({ item }) => (
     {item.type === "brand" ? (
       <span
         className="
-          bg-[linear-gradient(106.53deg,_#00B4FD_-5.68%,_#003ACE_86.98%)]
+          bg-[var(--gradient-primary)]
           bg-clip-text text-transparent
           text-xl sm:text-2xl md:text-3xl
           font-archivo shrink-0
@@ -35,7 +35,7 @@ const TickerSection = () => {
   const tickerItems = [...items, ...items, ...items];
 
   return (
-    <section className="bg-[#E9F4F9] border-y border-black/10 py-3 sm:py-4 overflow-hidden">
+    <section className="bg-[var(--text-primary)] border-y border-[var(--black-10)] py-3 sm:py-4 overflow-hidden">
       <style>{`
         @keyframes ticker {
           0%   { transform: translateX(0); }

@@ -16,12 +16,12 @@ const Navbar = () => {
         mx-auto
         rounded-[14px]
         border
-        border-white/10
-        bg-[#2F2F2FB2]
+        border-[var(--white-10)]
+        bg-[var(--bg-glass)]
         backdrop-blur-xl
         px-[10px]
         py-[9px]
-        text-[#E9F4F9]
+        text-[var(--text-primary)]
         mt-3
       "
     >
@@ -33,22 +33,22 @@ const Navbar = () => {
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-8">
           <div className="flex items-center gap-6 font-chivo text-[12px] font-light">
-            <div className="flex items-center gap-1 cursor-pointer hover:text-white/70 transition-colors">
+            <div className="flex items-center gap-1 cursor-pointer hover:text-[var(--white-70)] transition-colors">
               <span>SOLUTIONS</span>
               <ChevronDown size={14} />
             </div>
-            <div className="flex items-center gap-1 cursor-pointer hover:text-white/70 transition-colors">
+            <div className="flex items-center gap-1 cursor-pointer hover:text-[var(--white-70)] transition-colors">
               <span>RESOURCES</span>
               <ChevronDown size={14} />
             </div>
-            <div className="cursor-pointer hover:text-white/70 transition-colors">
+            <div className="cursor-pointer hover:text-[var(--white-70)] transition-colors">
               ABOUT US
             </div>
           </div>
 
           <button
             className="
-              border border-[#E9F4F9] rounded-[6px]
+              border border-[var(--text-primary)] rounded-[6px]
               px-4 py-2 text-[12px] font-chivo
               transition-all duration-300
               hover:bg-white hover:text-black
@@ -60,7 +60,7 @@ const Navbar = () => {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden text-[#E9F4F9] p-1"
+          className="md:hidden text-[var(--text-primary)] p-1"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -70,21 +70,21 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col gap-4 pt-4 pb-2 px-2 border-t border-white/10 mt-3">
-          <div className="flex items-center gap-1 font-chivo text-[12px] cursor-pointer hover:text-white/70 transition-colors">
+        <div className="md:hidden flex flex-col gap-4 pt-4 pb-2 px-2 border-t border-[var(--white-10)] mt-3">
+          <div className="flex items-center gap-1 font-chivo text-[12px] cursor-pointer hover:text-[var(--white-70)] transition-colors">
             <span>SOLUTIONS</span>
             <ChevronDown size={14} />
           </div>
-          <div className="flex items-center gap-1 font-chivo text-[12px] cursor-pointer hover:text-white/70 transition-colors">
+          <div className="flex items-center gap-1 font-chivo text-[12px] cursor-pointer hover:text-[var(--white-70)] transition-colors">
             <span>RESOURCES</span>
             <ChevronDown size={14} />
           </div>
-          <div className="font-chivo text-[12px] cursor-pointer hover:text-white/70 transition-colors">
+          <div className="font-chivo text-[12px] cursor-pointer hover:text-[var(--white-70)] transition-colors">
             ABOUT US
           </div>
           <button
             className="
-              w-full border border-[#E9F4F9] rounded-[6px]
+              w-full border border-[var(--text-primary)] rounded-[6px]
               px-4 py-2 text-[12px] font-chivo
               transition-all duration-300
               hover:bg-white hover:text-black

@@ -42,7 +42,7 @@ const solutions = [
 
 const SolutionCard = () => {
   return (
-    <div className="mt-20 flex flex-col md:flex-row text-[#E9F4F9] w-full gap-10 md:gap-0">
+    <div className="mt-20 flex flex-col md:flex-row text-[var(--text-primary)] w-full gap-10 md:gap-0">
 
       {/* Left */}
       <div className="flex flex-col gap-6 md:gap-10 w-full md:w-1/2 items-center md:items-start text-center md:text-left">
@@ -54,7 +54,7 @@ const SolutionCard = () => {
         <button
           className="
             border
-            border-[#E9F4F9]
+            border-[var(--text-primary)]
             rounded-[8px]
             text-xs
             font-chivo
@@ -97,7 +97,7 @@ const SolutionCard = () => {
                 group
                 cursor-pointer
                 border-t
-                border-[#E9F4F9]/10
+                border-[var(--text-primary-10)]
                 pt-6
                 sm:border-none
                 sm:pt-0
@@ -107,8 +107,8 @@ const SolutionCard = () => {
               <div
                 className="
                   w-fit
-                  text-[#E9F4F9]/70
-                  group-hover:text-[#00B4FD]
+                  text-[var(--text-primary-70)]
+                  group-hover:text-[var(--blue-primary)]
                   transition-all
                   duration-300
                 "
@@ -122,7 +122,7 @@ const SolutionCard = () => {
                   {solution.title}
                 </h2>
 
-                <p className="text-sm leading-6 text-[#E9F4F9]/60 font-archivo">
+                <p className="text-sm leading-6 text-[var(--text-primary-60)] font-archivo">
                   {solution.description}
                 </p>
 
@@ -131,7 +131,7 @@ const SolutionCard = () => {
                     flex
                     items-center
                     gap-2
-                    text-[#00B4FD]
+                    text-[var(--blue-primary)]
                     text-xs
                     font-chivo
                     tracking-wide

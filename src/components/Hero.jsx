@@ -14,7 +14,7 @@ const companies = [
 
 const Hero = () => {
   return (
-    <div className="text-[#E9F4F9] mt-24 md:mt-32 flex flex-col md:flex-row justify-between items-center gap-12 md:gap-0">
+    <div className="text-[var(--text-primary)] mt-24 md:mt-32 flex flex-col md:flex-row justify-between items-center gap-12 md:gap-0">
       
       {/* Left */}
       <div className="flex flex-col w-full md:w-auto">
@@ -24,7 +24,7 @@ const Hero = () => {
             of modern banking
           </h1>
 
-          <p className="font-archivo text-xs text-[#E9F4F9]/80 max-w-[320px] mx-auto md:mx-0">
+          <p className="font-archivo text-xs text-[var(--text-primary-80)] max-w-[320px] mx-auto md:mx-0">
             We drive innovation and growth, provide seamless{" "}
             <br className="hidden md:block" />
             customer experience and operational excellence
@@ -33,17 +33,17 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 mt-10 items-center md:items-start">
-          <button className="w-full sm:w-auto rounded-[10px] py-2 px-6 text-xs bg-[linear-gradient(106.53deg,_#00B4FD_-5.68%,_#003ACE_86.98%)] hover:opacity-90 transition-opacity">
+          <button className="w-full sm:w-auto rounded-[10px] py-2 px-6 text-xs bg-[var(--gradient-primary)] hover:opacity-90 transition-opacity">
             REQUEST DEMO
           </button>
-          <button className="w-full sm:w-auto rounded-[10px] py-2 px-6 border border-[#E9F4F9] text-xs hover:bg-white/10 transition-colors">
+          <button className="w-full sm:w-auto rounded-[10px] py-2 px-6 border border-[var(--text-primary)] text-xs hover:bg-[var(--white-10)] transition-colors">
             CONTACT US
           </button>
         </div>
 
         {/* Trusted By */}
         <div className="mt-12 md:mt-20 flex flex-col gap-3 items-center md:items-start">
-          <p className="text-[#E9F4F9]/70 text-sm font-archivo">Trusted By:</p>
+          <p className="text-[var(--text-primary-70)] text-sm font-archivo">Trusted By:</p>
 
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-4">
             {companies.map((company) => {
@@ -53,8 +53,8 @@ const Hero = () => {
                   key={company.name}
                   className="
                     flex items-center gap-2
-                    text-[#E9F4F9]/40
-                    hover:text-[#E9F4F9]/70
+                    text-[var(--text-primary-40)]
+                    hover:text-[var(--text-primary-70)]
                     transition-all duration-300
                     cursor-pointer
                   "
@@ -81,7 +81,7 @@ const Hero = () => {
             blur-[100px]
             md:blur-[120px]
             opacity-50
-            bg-[linear-gradient(103.43deg,_#00B4FD_-1.02%,_#003ACE_83.53%)]
+            bg-[var(--gradient-primary-soft)]
           "
         />
 

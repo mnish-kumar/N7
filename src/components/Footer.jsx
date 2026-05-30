@@ -46,7 +46,7 @@ const locations = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#000D12] text-[#E9F4F9] py-10">
+    <footer className="bg-[var(--bg-primary)] text-[var(--text-primary)] py-10">
       <div className="mb-20">
         <PaperlessSection />
       </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                 text-[120px] sm:text-[160px] lg:text-[220px]
                 font-bold
                 leading-none
-                bg-[linear-gradient(180deg,_#01B4FD_0%,_#013ACF_100%)]
+                bg-[var(--gradient-brand-vertical)]
                 bg-clip-text
                 text-transparent
               "
@@ -75,11 +75,11 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {locations.map((location) => (
                 <div key={`${location.city}-${location.address}`} className="space-y-3">
-                  <div className="flex items-center gap-2 text-sm font-chivo text-[#E9F4F9]/80">
-                    <MapPin size={14} className="text-[#00B4FD]" />
+                  <div className="flex items-center gap-2 text-sm font-chivo text-[var(--text-primary-80)]">
+                    <MapPin size={14} className="text-[var(--blue-primary)]" />
                     <span>{location.city}</span>
                   </div>
-                  <p className="text-xs leading-6 text-[#E9F4F9]/60">
+                  <p className="text-xs leading-6 text-[var(--text-primary-60)]">
                     {location.address}
                   </p>
                 </div>
@@ -95,10 +95,10 @@ const Footer = () => {
                     <li key={item}>
                       <a
                         href="#"
-                        className="flex items-center justify-between text-xs text-[#E9F4F9]/70 hover:text-[#00B4FD] transition-colors"
+                        className="flex items-center justify-between text-xs text-[var(--text-primary-70)] hover:text-[var(--blue-primary)] transition-colors"
                       >
                         <span>{item}</span>
-                        <ArrowUpRight size={14} className="text-[#00B4FD]" />
+                        <ArrowUpRight size={14} className="text-[var(--blue-primary)]" />
                       </a>
                     </li>
                   ))}
@@ -112,10 +112,10 @@ const Footer = () => {
                     <li key={item}>
                       <a
                         href="#"
-                        className="flex items-center justify-between text-xs text-[#E9F4F9]/70 hover:text-[#00B4FD] transition-colors"
+                        className="flex items-center justify-between text-xs text-[var(--text-primary-70)] hover:text-[var(--blue-primary)] transition-colors"
                       >
                         <span>{item}</span>
-                        <ArrowUpRight size={14} className="text-[#00B4FD]" />
+                        <ArrowUpRight size={14} className="text-[var(--blue-primary)]" />
                       </a>
                     </li>
                   ))}
@@ -131,13 +131,13 @@ const Footer = () => {
                       <li key={social.label}>
                         <a
                           href={social.href}
-                          className="flex items-center justify-between text-xs text-[#E9F4F9]/70 hover:text-[#00B4FD] transition-colors"
+                          className="flex items-center justify-between text-xs text-[var(--text-primary-70)] hover:text-[var(--blue-primary)] transition-colors"
                         >
                           <span className="flex items-center gap-2">
-                            <Icon size={14} className="text-[#00B4FD]" />
+                            <Icon size={14} className="text-[var(--blue-primary)]" />
                             {social.label}
                           </span>
-                          <ArrowUpRight size={14} className="text-[#00B4FD]" />
+                          <ArrowUpRight size={14} className="text-[var(--blue-primary)]" />
                         </a>
                       </li>
                     );
@@ -148,8 +148,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6">
-          <p className="text-[10px] sm:text-xs text-[#E9F4F9]/40 leading-5">
+        <div className="mt-12 border-t border-[var(--white-10)] pt-6">
+          <p className="text-[10px] sm:text-xs text-[var(--text-primary-40)] leading-5">
             Copyright © 2022 by Linktia Infosystems Limited — (CB7 and N7 as Commercial Brand) —
             (Registered under the Companies Act 2006 in England and Wales | Number of incorporation 13100992)
           </p>

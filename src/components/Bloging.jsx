@@ -2,7 +2,7 @@ const Bloging = () => {
   return (
     <div
       className="
-                bg-[#02141B]
+                bg-[var(--bg-card)]
                 rounded-[28px]
                 p-8
                 min-h-[20px]
@@ -16,7 +16,7 @@ const Bloging = () => {
       <div>
         <p
           className="
-                    text-[#00B4FD]
+                    text-[var(--blue-primary)]
                     text-[12px]
                     uppercase
                     tracking-[2px]
@@ -47,7 +47,7 @@ const Bloging = () => {
           className="
                     flex
                     gap-6
-                    text-[#00B4FD]/80
+                    text-[var(--blue-primary-80)]
                     text-[14px]
                 "
         >
@@ -62,13 +62,13 @@ const Bloging = () => {
                     rounded-2xl
                     py-3
                     border
-                    border-white/30
+                    border-[var(--white-30)]
                     mt-4
-                    text-white/50
+                    text-[var(--white-50)]
                     text-sm
                     font-chivo
 
-                    hover:border-[#00B4FD]
+                    hover:border-[var(--blue-primary)]
                     transition-all
                     "
       >

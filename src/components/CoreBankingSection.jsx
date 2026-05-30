@@ -8,7 +8,7 @@ const CoreBankingSection = () => {
         relative
         mt-20 md:mt-32
         overflow-hidden
-        text-[#E9F4F9]
+        text-[var(--text-primary)]
       "
     >
       {/* Background CB7 Watermark - hidden on mobile (too large) */}
@@ -57,7 +57,7 @@ const CoreBankingSection = () => {
             core banking.
           </h1>
 
-          <p className="text-[#E9F4F9]/60 leading-7 text-sm md:text-base">
+          <p className="text-[var(--text-primary-60)] leading-7 text-sm md:text-base">
             Faster time to market with our cloud-based
             core banking services
           </p>
@@ -71,10 +71,10 @@ const CoreBankingSection = () => {
                 py-3 px-8
                 text-xs
                 font-chivo
-                bg-[linear-gradient(106.53deg,_#00B4FD_-5.68%,_#003ACE_86.98%)]
+                bg-[var(--gradient-primary)]
                 transition-all duration-300
                 hover:scale-[1.03]
-                hover:shadow-[0px_0px_25px_rgba(0,180,253,0.45)]
+                hover:shadow-[0px_0px_25px_var(--blue-primary-45)]
               "
             >
               REQUEST DEMO
@@ -83,7 +83,7 @@ const CoreBankingSection = () => {
             <button
               className="
                 flex items-center gap-2
-                text-[#00B4FD]
+                text-[var(--blue-primary)]
                 text-xs font-chivo
                 transition-all duration-300
                 hover:gap-3
@@ -109,7 +109,7 @@ const CoreBankingSection = () => {
           <div
             className="
               absolute inset-0
-              bg-[linear-gradient(103.43deg,_#00B4FD_-1.02%,_#003ACE_83.53%)]
+              bg-[var(--gradient-primary-soft)]
               blur-[80px] md:blur-[120px]
               opacity-30
               scale-90
@@ -123,7 +123,7 @@ const CoreBankingSection = () => {
               w-full
               max-w-[340px] sm:max-w-[460px] md:max-w-[550px] md:w-[550px]
               rounded-[16px] md:rounded-[20px]
-              border border-[#E9F4F9]/10
+              border border-[var(--text-primary-10)]
               shadow-2xl
             "
             src={CoreBankingImg}

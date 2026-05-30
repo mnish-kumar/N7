@@ -55,7 +55,7 @@ const CaseStudiesSection = () => {
   const currentStudy = caseStudies[currentIndex];
 
   return (
-    <section className="relative py-30 bg-[#000D12] text-[#E9F4F9] px-4 sm:px-8 md:px-15 overflow-hidden">
+    <section className="relative py-30 bg-[var(--bg-primary)] text-[var(--text-primary)] px-4 sm:px-8 md:px-15 overflow-hidden">
       {/* Title */}
       <div className="text-center mb-16 md:mb-20">
         <h1 className="font-archivo text-4xl sm:text-5xl md:text-6xl font-normal leading-tight">
@@ -68,7 +68,7 @@ const CaseStudiesSection = () => {
         {/* Left Arrow - Hidden on mobile */}
         <button
           onClick={goToPrevious}
-          className="hidden md:flex items-center justify-center w-12 h-12 rounded-full border border-[#00B4FD] text-[#00B4FD] hover:bg-[#00B4FD]/10 transition-all duration-300 shrink-0"
+          className="hidden md:flex items-center justify-center w-12 h-12 rounded-full border border-[var(--blue-primary)] text-[var(--blue-primary)] hover:bg-[var(--blue-primary-10)] transition-all duration-300 shrink-0"
           aria-label="Previous case study"
         >
           <ChevronLeft size={20} />
@@ -78,9 +78,9 @@ const CaseStudiesSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 flex-1">
           {/* Logo/Icon Section */}
           <div className="w-full md:w-[40%] flex-shrink-0">
-            <div className="bg-[linear-gradient(135deg,_#0A2342_0%,_#0F3C5D_100%)] rounded-2xl p-8 md:p-10 aspect-square md:aspect-auto md:h-[340px] flex items-center justify-center relative overflow-hidden">
+            <div className="bg-[var(--gradient-case)] rounded-2xl p-8 md:p-10 aspect-square md:aspect-auto md:h-[340px] flex items-center justify-center relative overflow-hidden">
               {/* Gradient Glow */}
-              <div className="absolute inset-0 bg-[linear-gradient(103.43deg,_#00B4FD_-1.02%,_#003ACE_83.53%)] blur-[60px] opacity-20" />
+              <div className="absolute inset-0 bg-[var(--gradient-primary-soft)] blur-[60px] opacity-20" />
 
               {/* Icon Grid */}
               <div className="relative z-10 grid grid-cols-2 gap-8 md:gap-10">
@@ -95,7 +95,7 @@ const CaseStudiesSection = () => {
           {/* Content Section */}
           <div className="w-full md:w-[60%] flex flex-col gap-6 md:gap-8">
             {/* Category */}
-            <p className="text-[#00B4FD] text-xs font-chivo tracking-widest uppercase">
+            <p className="text-[var(--blue-primary)] text-xs font-chivo tracking-widest uppercase">
               {currentStudy.category}
             </p>
 
@@ -106,14 +106,14 @@ const CaseStudiesSection = () => {
 
             {/* Company */}
             <div className="flex items-center gap-3">
-              <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-[#E9F4F9]/10 flex items-center justify-center">
-                <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-[#00B4FD]" />
+              <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-[var(--text-primary-10)] flex items-center justify-center">
+                <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-[var(--blue-primary)]" />
               </div>
-              <p className="text-[#E9F4F9]/70 font-chivo text-sm">{currentStudy.company}</p>
+              <p className="text-[var(--text-primary-70)] font-chivo text-sm">{currentStudy.company}</p>
             </div>
 
             {/* Read More Button */}
-            <button className="w-full md:w-auto px-8 py-3 border border-[#E9F4F9]/30 rounded-[8px] text-xs font-chivo uppercase tracking-wider hover:border-[#00B4FD] hover:text-[#00B4FD] transition-all duration-300">
+            <button className="w-full md:w-auto px-8 py-3 border border-[var(--text-primary-30)] rounded-[8px] text-xs font-chivo uppercase tracking-wider hover:border-[var(--blue-primary)] hover:text-[var(--blue-primary)] transition-all duration-300">
               Read More
             </button>
           </div>
@@ -122,7 +122,7 @@ const CaseStudiesSection = () => {
         {/* Right Arrow - Hidden on mobile */}
         <button
           onClick={goToNext}
-          className="hidden md:flex items-center justify-center w-12 h-12 rounded-full border border-[#00B4FD] text-[#00B4FD] hover:bg-[#00B4FD]/10 transition-all duration-300 shrink-0"
+          className="hidden md:flex items-center justify-center w-12 h-12 rounded-full border border-[var(--blue-primary)] text-[var(--blue-primary)] hover:bg-[var(--blue-primary-10)] transition-all duration-300 shrink-0"
           aria-label="Next case study"
         >
           <ChevronRight size={20} />
@@ -133,14 +133,14 @@ const CaseStudiesSection = () => {
       <div className="flex md:hidden items-center justify-center gap-4 mt-12">
         <button
           onClick={goToPrevious}
-          className="flex items-center justify-center w-10 h-10 rounded-full border border-[#00B4FD] text-[#00B4FD] hover:bg-[#00B4FD]/10 transition-all duration-300"
+          className="flex items-center justify-center w-10 h-10 rounded-full border border-[var(--blue-primary)] text-[var(--blue-primary)] hover:bg-[var(--blue-primary-10)] transition-all duration-300"
           aria-label="Previous case study"
         >
           <ChevronLeft size={16} />
         </button>
         <button
           onClick={goToNext}
-          className="flex items-center justify-center w-10 h-10 rounded-full border border-[#00B4FD] text-[#00B4FD] hover:bg-[#00B4FD]/10 transition-all duration-300"
+          className="flex items-center justify-center w-10 h-10 rounded-full border border-[var(--blue-primary)] text-[var(--blue-primary)] hover:bg-[var(--blue-primary-10)] transition-all duration-300"
           aria-label="Next case study"
         >
           <ChevronRight size={16} />
@@ -157,8 +157,8 @@ const CaseStudiesSection = () => {
               onClick={() => goToSlide(index)}
               className={`transition-all duration-300 ${
                 index === currentIndex
-                  ? "w-8 h-2 bg-[#00B4FD] rounded-full"
-                  : "w-2 h-2 bg-[#E9F4F9]/30 rounded-full hover:bg-[#E9F4F9]/50"
+                  ? "w-8 h-2 bg-[var(--blue-primary)] rounded-full"
+                  : "w-2 h-2 bg-[var(--text-primary-30)] rounded-full hover:bg-[var(--text-primary-50)]"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -168,7 +168,7 @@ const CaseStudiesSection = () => {
         {/* View All Link */}
         <a
           href="#"
-          className="text-[#00B4FD] text-xs font-chivo uppercase tracking-wider hover:text-[#00B4FD]/70 transition-colors order-1 md:order-2"
+          className="text-[var(--blue-primary)] text-xs font-chivo uppercase tracking-wider hover:text-[var(--blue-primary-70)] transition-colors order-1 md:order-2"
         >
           VIEW ALL →
         </a>
